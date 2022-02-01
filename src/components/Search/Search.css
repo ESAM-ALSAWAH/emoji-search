@@ -1,0 +1,35 @@
+.search-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-area input {
+  background: var(--background-shape);
+  color: var(--text-color);
+  padding: 14px 22px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  outline: none;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right);
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: 0.4s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.search-area input:focus {
+  box-shadow: -1px -1px 5px inset hsl(233deg 100% 43% / 60%),
+    1px 1px 5px inset hsl(233deg 100% 43% / 60%);
+}
+
+@media screen and (max-width: 768px) {
+  .search-area input {
+    width: 80%;
+  }
+}

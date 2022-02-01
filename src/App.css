@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+
+.light {
+  --background-color: #eaedf0;
+  --background-shape: #fff;
+  --text-color: #000;
+  --svg-color: #ffbb52;
+  --card-shadow-color-top-left: hsla(0, 0%, 100%, 0.6);
+  --card-shadow-color-bottom-right: rgba(21, 43, 71, 0.06666666666666667);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark {
+  --background-color: #121212;
+  --background-shape: #282e34;
+  --text-color: #b3b3b3;
+  --svg-color: #ffffff;
+  --card-shadow-color-top-left: rgba(0, 0, 0, 0.6);
+  --card-shadow-color-bottom-right: hsla(0, 0%, 58.8%, 0.06666666666666667);
 }

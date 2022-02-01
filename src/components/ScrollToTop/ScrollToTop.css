@@ -1,0 +1,12 @@
+.scrollTotop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+.scrollTotop svg {
+  cursor: pointer;
+  color: var(--background-shape);
+  font-size: 25px;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right);
+}

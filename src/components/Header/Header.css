@@ -1,0 +1,13 @@
+header {
+  margin: auto;
+  margin-top: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+  width: fit-content;
+}
+header > * {
+  text-align: center;
+  margin-bottom: 15px;
+}
+

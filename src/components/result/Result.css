@@ -1,0 +1,53 @@
+.emoji-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.emoji-block {
+  position: relative;
+  background-color: var(--background-shape);
+  width: 180px;
+  height: 180px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right);
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.emoji-block:hover {
+  box-shadow: -1px -1px 5px inset hsl(233deg 100% 43% / 60%),
+    1px 1px 5px inset hsl(233deg 100% 43% / 60%);
+}
+.emoji-block .copied {
+  position: absolute;
+  background: rgba(0, 119, 255, 0.2);
+  color: #07f;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 6px;
+  bottom: 8px;
+  left: 8px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .emoji-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .emoji-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

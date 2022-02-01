@@ -1,0 +1,33 @@
+.button-theme {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.1rem;
+  cursor: pointer;
+  margin: 20px auto;
+  background-color: var(--background-button);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right);
+}
+.button-theme svg {
+  color: var(--svg-color);
+  pointer-events: none;
+  margin: 0 5px;
+  font-size: 25px;
+}
+.button-theme svg:first-of-type {
+  order: 0;
+}
+
+.button-theme.toggle svg:first-of-type {
+  order: 1;
+}
+
+.theme-container p {
+  font-size: 10px;
+}
